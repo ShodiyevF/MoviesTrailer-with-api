@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>77-dars</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1 class="ml-autoa mt-5 movie-title">Welcome Movies Trailer</h1>
+    
+    <div class="container mt-5">
+        
+        <div class="form-result-wrapper">
+            <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+                
+                <input class="form__input-name form-control mb-3 " type="text" name="Movie name" placeholder="Movie name"
+                aria-label="Movie name">
+                <div class="inputs-wrapper">
+                    
+                    <input class="form__input-bal form-control mb-3" type="number" min="1" max="10" name="bal" placeholder="5"
+                    aria-label="Movie bal">
+                    
+                    
+                    <select class="form__select1 form-select mb-3" name="genre">
+                        <option value="All">All</option>
+                    </select>
+
+                </div>
+                
+                <button class="form__btn">Search</button>
+                
+            </form>
+            
+            <div class="result-bookmark-wrapper">
+                <h2 class="search-result">Search result: <span class="search-result__span"></span></h2>
+                <button class="bookmark-btn">Bookmarked movies </button>
+                
+            </div>
+            
+        </div>
+        
+        <div class="result">
+            
+            <ul class="result-list">
+            </ul>
+            
+        </div>
+        
+    </div>
+    
+    <template class="item-template">    
+        
+        <li class="item">
+            
+            <img class="item__img" src="" alt="rasm" width="328" height="200">
+            <div class="testa">
+                
+                <h3 class="item__title"></h3>
+                
+                <p class="item__year"></p>
+                
+                <span class="item__star"></span>
+            </div>
+            
+            <ul class="inner-list">
+                
+                <li class="inner-list__item">
+                    <a class="item__link watch" href="">Watch trailer</a>
+                </li>
+                
+                <li class="inner-list__item">
+                    <button type="button" class="y9item__link info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        More info
+                    </button>
+                </li>
+                <li class="inner-list__item">
+                    <button class="item__links mark">Bookmark</button>
+                </li>
+                
+            </ul>
+            
+        </li>
+        
+    </template>
+    
+    
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img class="modal-img" src="" alt="rasm" width="328" height="200">
+                <div class="modal-body">
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="js/util.js"></script>
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="js/movies-new.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
